@@ -5,32 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/ptmono-regular-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/robotocondensed-regular-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/robotocondensed-bold-webfont.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <div class="container">
     <header class="page-header">
       <h1 class="visually-hidden">Технологии Smart Device</h1>
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-smart-device-desktop.svg" width="226" height="30" alt="Логотип Смарт Девайс">
-        </a>
-        <ul class="page-header__contacts contacts-list">
-          <li class="contacts-list__item">
+      <div class="page-header__nav nav">
+        <div class="nav__wrapper">
+          <a class="nav__logo">
+            <img class="nav__logo-image" src="img/logo-smart-device-desktop.svg" width="226" height="30" alt="Логотип Смарт Девайс">
+          </a>
+          <ul class="nav__contacts contacts-list">
+            <li class="contacts-list__item">
             <a class="contacts-list__link" href="mailto:info@sd.ru" aria-label="Почтовый ящик">info@sd.ru</a>
-          </li>
-          <li class="contacts-list__item">
+            </li>
+            <li class="contacts-list__item">
             <a class="contacts-list__link" href="tel:74950005252" aria-label="Телефон">+7 (495) 000 52 52</a>
-          </li>
-        </ul>
-        <button class="page-header__call button" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+            </li>
+          </ul>
+          <button class="nav__call button" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+        </div>
       </div>
       <div class="page-header__about about">
         <div class="about__list">
           <h2 class="about__title" >Печатные платы</h2>
           <p class="about__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
           <a class="about__button button" href="#">Получить бесплатную консультацию</a>
-      </div>
+        </div>
       </div>
     </header>
   </div>

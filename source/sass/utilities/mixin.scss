@@ -1,0 +1,18 @@
+@mixin title-font {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+@mixin total-font {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+@mixin default-style {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
