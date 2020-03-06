@@ -7,6 +7,7 @@
     "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.7",
     "del": "^4.1.1",
+    "editorconfig-cli": "^0.3.0",
     "eslint": "4.16.0",
     "eslint-config-htmlacademy": "0.4.x",
     "gulp": "^4.0.2",

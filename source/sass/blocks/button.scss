@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  min-width: 180px;
+  padding: 14px 24px;
+  margin: 0 auto;
+
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $white;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: 5px;
+}
