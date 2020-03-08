@@ -1,9 +1,13 @@
 .contacts-list {
   display: flex;
-  /*flex-grow: 1;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;*/
+  justify-content: space-around;
+  align-items: center;
 
   @include default-style;
+}
+
+.contacts-list__link {
+  line-height: 18px;
+  @include default-style;
+  color: $white;
 }

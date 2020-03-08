@@ -1,4 +1,15 @@
 .page-header {
+  width: 100%;
   padding-top: 0;
+
   background-color: $darkblue;
+  background-image: url("../img/bg/bg-header-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 100%,100%, cover;
+}
+
+.page-header__nav {
+  max-width: 1415px;
+  margin: 0 auto;
 }
