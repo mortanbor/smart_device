@@ -1,5 +1,6 @@
 .nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   width: 100%;
   padding-top: 33px;
@@ -22,6 +23,7 @@
 }
 
 .nav__contacts {
+  display: flex;
   width: 66%;
   margin-right: 7.5%;
 }

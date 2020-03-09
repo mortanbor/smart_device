@@ -2,12 +2,31 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 
   @include default-style;
+}
+
+.contacts-list__item:first-child {
+  width: 150px;
+}
+
+.contacts-list__item:last-child {
+  width: 225px;
 }
 
 .contacts-list__link {
   line-height: 18px;
   @include default-style;
   color: $white;
+}
+
+.contacts-list__link--mail {
+  width: 19px;
+  height: 14px;
+}
+
+.contacts-list__link--tel {
+  width: 18px;
+  height: 18px;
 }
