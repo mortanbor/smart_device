@@ -1,0 +1,82 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 200px 0 90px;
+  margin: 0 auto;
+
+  /*background-color: green;*/
+}
+
+.about__title {
+  @include default-style;
+  margin-bottom: 40px;
+
+  @include title-font;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.07em;
+  color: $white;
+}
+
+.about__text {
+  position: relative;
+  @include default-style;
+  margin: 0;
+
+  width: 53%;
+  margin-bottom: 42px;
+  padding-left: 94px;
+
+  font-family: PT Mono;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: left;
+  font-style: normal;
+  color: $white;
+}
+
+.about__text::before {
+  top: 17px;
+  left: 0;
+
+  background-color: $white;
+  width: 66px;
+  height: 2px;
+  position: absolute;
+  content: "";
+}
+
+.about__button {
+  box-sizing: border-box;
+  width: 407px;
+  height: 55px;
+  margin-left: 94px;
+  margin-bottom: 96px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+
+  background-color: $blue;
+  border: 1px solid $blue;
+  border-radius: 5px;
+}
+
+.about__scroll {
+  display: block;
+
+  color: $white;
+
+  transform: rotate(180deg);
+  opacity: 0.5;
+
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.5;
+  writing-mode: vertical-lr;
+}

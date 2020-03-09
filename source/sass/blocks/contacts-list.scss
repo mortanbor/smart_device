@@ -1,23 +1,25 @@
 .contacts-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  flex-grow: 1;
+  flex-wrap: wrap;
   align-items: center;
-  width: 100%;
+  flex-grow: 1;
 
   @include default-style;
 }
 
-.contacts-list__item:first-child {
-  width: 150px;
+.contacts-list__item:nth-child(1n) {
+  margin-left: 88px;
 }
 
-.contacts-list__item:last-child {
-  width: 225px;
+.contacts-list__item:nth-child(1n+1) {
+  margin-left: 88px;
 }
 
 .contacts-list__link {
-  line-height: 18px;
   @include default-style;
+  line-height: 18px;
   color: $white;
 }
 

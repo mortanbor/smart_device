@@ -1,15 +1,37 @@
 .page-header {
-  width: 100%;
   padding-top: 0;
 
   background-color: $darkblue;
   background-image: url("../img/bg/bg-header-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center 0;
-  background-size: 100%,100%, cover;
+  background-size: 100%, 100%, cover;
 }
 
 .page-header__nav {
-  max-width: 1415px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1410px;
   margin: 0 auto;
+  padding: 33px;
+}
+
+.page-header__about {
+  max-width: 1410px;
+  margin: 0 auto;
+}
+
+.page-header__nav__logo {
+  margin-right: 30px;
+}
+
+.page-header__nav__wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+
+.page-header__nav_button {
+  margin: 0;
+  margin-left: 4.3%;
 }

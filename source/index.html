@@ -17,12 +17,14 @@
   <div class="container">
     <header class="page-header">
       <h1 class="visually-hidden">Технологии Smart Device</h1>
-      <div class="page-header__nav nav">
-        <a class="nav__logo" aria-label="Логотип Smart Device">
-          <img class="nav__logo-image" src="img/icon/icon-logosmart_mobile.svg" width="174" height="52" alt="Логотип Смарт Девайс">
+      <div class="page-header__nav">
+        <a class="page-header__nav__logo" aria-label="Логотип Смарт Девайс">
+          <svg class="page-header__nav__logo-image" width="202" height="52">
+            <use xlink:href="#icon-smart_logo-desktop"></use>
+          </svg>
         </a>
-        <div class="nav__wrapper">
-          <ul class="nav__contacts contacts-list">
+        <div class="page-header__nav__wrapper">
+          <ul class="page-header__nav__contacts contacts-list">
             <li class="contacts-list__item">
             <a class="contacts-list__link" href="mailto:info@sd.ru" aria-label="Почтовый ящик">
               <svg class="contacts-list__link--mail" width="19" height="14">
@@ -39,16 +41,14 @@
               +7 (495) 000 52 52</a>
             </li>
           </ul>
-          <button class="nav__call button" type="button" aria-label="Заказать звонок">Заказать звонок</button>
-      </div>
+          <button class="page-header__nav_button button" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+        </div>
       </div>
       <div class="page-header__about about">
-        <div class="about__list">
-          <h2 class="about__title" >Печатные платы</h2>
-          <p class="about__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="about__button button" href="#">Получить бесплатную консультацию</a>
-          <a class="about__scroll" href="#">Скролл вниз</a>
-        </div>
+        <h2 class="about__title" >Печатные платы</h2>
+        <p class="about__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="about__button button about__button--blue" href="#">Получить бесплатную консультацию</a>
+        <a class="about__scroll" href="#">Скролл вниз</a>
       </div>
     </header>
     <main class="page-main">
@@ -134,7 +134,9 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" aria-label="Логотип Service Device">
-          <img class="page-footer__image" src="img/logo-smart-device-desktop.svg" width="201" height="52" alt="Логотип Сервис Девайс">
+          <svg class="page-footer__image" width="216" height="52">
+            <use xlink:href="#icon-service-logo-desktop"></use>
+          </svg>
         </a>
         <p class="page-footer__copyright-years page-footer__copyright-years--top">1999-2018 SD Service Devices</p>
         <ul class="page-footer__social social">
