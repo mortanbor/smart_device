@@ -2,10 +2,13 @@
   padding-top: 0;
 
   background-color: $darkblue;
-  background-image: url("../img/bg/bg-header-desktop@1x.png");
+  background-image:
+    url("../img/bg/bg_circuit_desktop@1x.png"),
+    url("../img/bg/bg-triangle-header@1x.png"),
+    url("../img/bg/bg-header-desktop@1.png");
   background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: 100%, 100%, cover;
+  background-position: calc(54.2% + 379px) 258px, 1038px 285px, 0 0;
+  background-size: auto, auto, cover;
 }
 
 .page-header__nav {
@@ -15,11 +18,6 @@
   max-width: 1410px;
   margin: 0 auto;
   padding: 33px;
-}
-
-.page-header__about {
-  max-width: 1410px;
-  margin: 0 auto;
 }
 
 .page-header__nav__logo {
@@ -34,4 +32,16 @@
 .page-header__nav_button {
   margin: 0;
   margin-left: 4.3%;
+}
+
+.page-header__about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1410px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-right: 33px;
+  padding-bottom: 90px;
+  padding-left: 33px;
 }
