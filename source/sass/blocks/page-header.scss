@@ -1,13 +1,11 @@
 .page-header {
-  padding-top: 0;
-
-  background-color: $darkblue;
   background-image:
     url("../img/bg/bg_circuit_desktop@1x.png"),
     url("../img/bg/bg-triangle-header@1x.png"),
-    url("../img/bg/bg-header-desktop@1.png");
+    url("../img/bg/bg-header-desktop@1x.png");
+  background-color: $darkblue;
   background-repeat: no-repeat;
-  background-position: calc(54.2% + 379px) 258px, 1038px 285px, 0 0;
+  background-position: calc(54.2% + 379px) 258px, 54% 13.4%, 0 0;
   background-size: auto, auto, cover;
 }
 
@@ -44,4 +42,27 @@
   padding-right: 33px;
   padding-bottom: 90px;
   padding-left: 33px;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    background-image:
+      url("../img/bg/bg_circuit_tablet@1x.png"),
+      url("../img/bg/bg-triangle-header-tablet@1x.png"),
+      url("../img/bg/bg-header-tablet@1x.png");
+    background-color: $darkblue;
+    background-repeat: no-repeat;
+    background-position: 100% 113px, 100% 0, 0 0;;
+    background-size: auto, auto, cover;
+  }
+
+  .page-header__nav {
+    width: 76.4%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .page-header__nav__logo {
+    margin-right: 20px;
+  }
 }

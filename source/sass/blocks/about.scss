@@ -1,5 +1,6 @@
 .about__title {
   @include default-style;
+  width: 57%;
   margin-bottom: 40px;
 
   @include title-font;
