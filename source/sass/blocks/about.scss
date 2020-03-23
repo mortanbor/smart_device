@@ -21,7 +21,7 @@
   margin-bottom: 42px;
   padding-left: 94px;
 
-  font-family: PT Mono;
+  font-family: PT Mono, "Arial", sans-serif;
   font-weight: normal;
   font-size: 22px;
   line-height: 34px;
@@ -54,3 +54,24 @@
   opacity: 0.5;
   writing-mode: vertical-lr;
 }
+
+@media (max-width: $tablet-width) {
+  .about__scroll {
+    display: none;
+  }
+}
+
+  /*.about__title {
+    width: 57%;
+    margin-bottom: 40px;
+
+    @include title-font;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.07em;
+    color: $white;
+  }
+}*/

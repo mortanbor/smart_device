@@ -9,11 +9,7 @@
   @include default-style;
 }
 
-.contacts-list__item:nth-child(1n) {
-  margin-left: 88px;
-}
-
-.contacts-list__item:nth-child(1n+1) {
+.contacts-list__item {
   margin-left: 88px;
 }
 
@@ -31,4 +27,24 @@
 .contacts-list__link--tel {
   width: 18px;
   height: 18px;
+}
+
+@media (max-width: $tablet-width) {
+  .contacts-list__link {
+    font-size: 0;
+  }
+
+  .contacts-list__item {
+    margin-left: 6.4%;
+  }
+
+  .contacts-list__link--mail {
+    width: 25px;
+    height: 19px;
+  }
+
+  .contacts-list__link--tel {
+    width: 24px;
+    height: 24px;
+  }
 }

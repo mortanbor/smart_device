@@ -18,10 +18,6 @@
   padding: 33px;
 }
 
-.page-header__nav__logo {
-  margin-right: 30px;
-}
-
 .page-header__nav__wrapper {
   display: flex;
   flex-grow: 1;
@@ -29,7 +25,7 @@
 
 .page-header__nav_button {
   margin: 0;
-  margin-left: 4.3%;
+  margin-left: 50px;
 }
 
 .page-header__about {
@@ -57,12 +53,27 @@
   }
 
   .page-header__nav {
-    width: 76.4%;
-    margin: 0 auto;
-    padding: 20px;
+    width: 93.5%;
+    margin: auto;
+    padding: 3.3%;
   }
 
-  .page-header__nav__logo {
-    margin-right: 20px;
+  .page-header__nav_button {
+    display: none;
+  }
+
+  .page-header__about {
+    width: 93.5%;
+    padding: 0;
+    padding-top: 15.1%;
+    /*padding-right: 212px;*/
+    padding-bottom: 21.2%;
+    padding-left: 11.5%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header__nav {
+    width: auto;
   }
 }

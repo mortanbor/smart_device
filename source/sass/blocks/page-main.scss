@@ -1,0 +1,13 @@
+.page-main__wrapper {
+    background-color: $white;
+    background-image: url("../img/bg/bg-triangle-header@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /*background-size: cover;*/
+  }
+
+.page-main__advantages {
+  display: flex;
+  padding: 109px 375px;
+  width: 60%;
+}
