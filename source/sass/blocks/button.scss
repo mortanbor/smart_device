@@ -35,3 +35,29 @@
   border: 1px solid $blue;
   border-radius: 5px;
 }
+
+.button--white {
+  margin: 0;
+  @include title-font;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #00b2ff;
+
+  background-color: $white;
+  border: 1px solid $blue;
+  border-radius: 5px;
+}
+
+.button--form {
+  align-items: flex-start;
+  width: 47.4%;
+  padding: 14px 19px 14px 18px;
+  margin: 0;
+  margin-right: 38px;
+}

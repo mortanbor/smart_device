@@ -8,6 +8,30 @@
 
 .page-main__advantages {
   display: flex;
-  padding: 109px 375px;
+  margin: 0 auto;
+  padding-top: 110px;
   width: 60%;
+}
+
+.page-main__company {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  padding-left: 177px;
+  width: 60%;
+}
+
+.page-main__goods {
+  width: 100%;
+
+  background-color: $darkblue;
+}
+
+.page-main__question {
+  width: 100%;
+
+  background-color: $blue;
 }

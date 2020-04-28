@@ -1,20 +1,46 @@
 .advantages__list {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
 
-  margin: auto;
   @include default-style;
 }
 
 .advantages__item {
+  box-sizing: border-box;
   width: 49%;
+  min-height: 299px;
+  padding-top: 40px;
+  padding-left: 45px;
+  padding-bottom: 49px;
+  padding-right: 43px;
+
+  background-color: $white;
+  border: 1px solid $border-grey;
+  border-left: 3px solid $blue;
+
+  cursor: pointer;
+}
+
+.advantages__item--time {
+  margin-bottom: 30px;
+}
+
+.advantages__item--suppliers {
+  margin-bottom: 30px;
+}
+
+.advantages__item svg {
+  display: block;
+  margin-bottom: 23px;
+
+  fill: $blue;
 }
 
 .advantages__title {
   @include title-font;
+  margin-bottom: 15px;
+
   font-size: 24px;
   line-height: 34px;
   text-align: left;
@@ -27,5 +53,32 @@
   line-height: 22px;
   text-align: left;
 
-  color: #666666;
+  color: $grey;
+}
+
+.advantages__item:focus,
+.advantages__item:hover,
+.advantages__item:active {
+  color: $white;
+
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.advantages__item:focus h3,
+.advantages__item:hover h3,
+.advantages__item:active h3 {
+  color: $white;
+}
+
+.advantages__item:focus p,
+.advantages__item:hover p,
+.advantages__item:active p {
+  color: $white;
+}
+
+.advantages__item:focus svg,
+.advantages__item:hover svg,
+.advantages__item:active svg {
+  fill: $white;
 }

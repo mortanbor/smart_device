@@ -58,18 +58,30 @@
           <h2 class="visually-hidden">Почему Smart Device - преимущества</h2>
           <ul class="advantages__list" id="advantages1">
             <li class="advantages__item advantages__item--time">
+              <svg width="29" height="35">
+                <use xlink:href="#icon-stopwatch"></use>
+              </svg>
               <h3 class="advantages__title">Оперативные сроки</h3>
               <p class="advantages__description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
             </li>
             <li class="advantages__item advantages__item--suppliers">
+              <svg width="35" height="35">
+                <use xlink:href="#icon-supplier"></use>
+              </svg>
               <h3 class="advantages__title">Крупные поставщики</h3>
               <p class="advantages__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
             </li>
             <li class="advantages__item advantages__item--secret">
+              <svg width="36" height="31">
+                <use xlink:href="#icon-detective"></use>
+              </svg>
               <h3 class="advantages__title">Полная конфиденциальность</h3>
               <p class="advantages__description">По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
             </li>
             <li class="advantages__item advantages__item--cost">
+              <svg width="35" height="35">
+                <use xlink:href="#icon-cost"></use>
+              </svg>
               <h3 class="advantages__title">Персонализация стоимости</h3>
               <p class="advantages__description">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
             </li>
@@ -79,26 +91,29 @@
           <h2 class="about-company__title">О компании</h2>
           <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
           <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-          <a class="about-company__button button" href="#">Подробнее</a>
+          <a class="about-company__button button button--white" href="#">Подробнее</a>
         </section>
       </div>
       <section class="page-main__goods goods">
           <div class="goods__wrapper">
-            <h2 class="goods__title">Service Device предлагает следующие товары и услуги</h2>
+            <h2 class="goods__about">Service Device предлагает следующие товары и услуги</h2>
             <ul class="goods__list">
               <li class="goods__item">
                 <a class="goods__link" href="#">
                   <h3 class="goods__title">Производство печатных плат</h3>
+                  <img src="img\photo\photo_printboards_desktop_1x.jpg" width="370" height="620" alt="Производство печатных плат">
                 </a>
               </li>
               <li class="goods__item">
                 <a class="goods__link" href="#">
                   <h3 class="goods__title">Монтаж печатных плат</h3>
+                  <img src="img\photo\photo_montage_desktop_1x.jpg" width="370" height="620" alt="Производство печатных плат">
                 </a>
               </li>
               <li class="goods__item">
                 <a class="goods__link" href="#">
                   <h3 class="goods__title">Комплектующие для светотехники</h3>
+                  <img src="img\photo\photo_lighttechnol_desktop_1x.jpg" width="370" height="620" alt="Производство печатных плат">
                 </a>
               </li>
             </ul>
@@ -107,7 +122,7 @@
       <section class="page-main__question form">
         <h2 class="visually-hidden">Форма для вопросов</h2>
         <div class="form__wrapper" id="question1">
-          <h3 class="form____title">Остались вопросы? Задайте их нам!</h3>
+          <h3 class="form__title">Остались вопросы? Задайте их нам!</h3>
           <p>Мы проконсультируем Вас бесплатно</p>
           <form class="form__block" method="post">
             <ul class="form__list">
@@ -124,37 +139,41 @@
                 <textarea class="form__textarea" id="message-form" name="message" placeholder="Ваш вопрос" required></textarea>
               </li>
             </ul>
-            <button class="form__button button" type="submit">Задать вопрос</button>
-            <div class="form__agreement">
-              <input class="visually-hidden form__input form__input--check" type="checkbox" id="agreement" name="agreement" checked required>
-              <label class="form__label" for="agreement">Я согласен на обработку персональных данных</label>
-            </div>
+            <div class="form__wrap">
+              <button class="form__button button button--form" type="submit">Задать вопрос</button>
+              <div class="form__agreement">
+                <input class="visually-hidden form__input form__input--check" type="checkbox" id="agreement" name="agreement" checked required>
+                <label class="form__label" for="agreement">Я согласен на обработку персональных данных</label>
+              </div>
+          </div>
           </form>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" aria-label="Логотип Service Device">
-          <svg class="page-footer__image" width="216" height="52">
-            <use xlink:href="#icon-service-logo-desktop"></use>
-          </svg>
-        </a>
-        <p class="page-footer__copyright-years page-footer__copyright-years--top">1999-2018 SD Service Devices</p>
-        <ul class="page-footer__social social">
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="Мы в Фейсбук">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="Мы в Одноклассниках">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="Мы ВКонтакте">
-              </a>
-            </li>
-          </ul>
+        <section class="page-footer__connect">
+          <a class="page-footer__logo" aria-label="Логотип Service Device">
+            <svg class="page-footer__image" width="216" height="52">
+              <use xlink:href="#icon-service-logo-desktop"></use>
+            </svg>
+          </a>
+          <p class="page-footer__copyright-years page-footer__copyright-years--top">1999-2018 SD Service Devices</p>
+          <ul class="page-footer__social social">
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Мы в Фейсбук">f
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Мы в Одноклассниках">o
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Мы ВКонтакте">k
+                </a>
+              </li>
+            </ul>
+        </section>
         <section class="page-footer__section site-section">
           <h2 class="site-section__title">Разделы сайта</h2>
           <nav class="site-section__nav">
