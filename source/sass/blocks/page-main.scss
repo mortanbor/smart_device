@@ -1,9 +1,10 @@
 .page-main__wrapper {
+    position: relative;
     background-color: $white;
     background-image: url("../img/bg/bg-triangle-header@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    /*background-size: cover;*/
+    background-size: auto;
   }
 
 .page-main__advantages {
@@ -15,23 +16,19 @@
 
 .page-main__company {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   margin: 0 auto;
   padding-top: 110px;
   padding-bottom: 110px;
-  padding-left: 177px;
+
   width: 60%;
 }
 
 .page-main__goods {
   width: 100%;
-
   background-color: $darkblue;
 }
 
 .page-main__question {
   width: 100%;
-
   background-color: $blue;
 }

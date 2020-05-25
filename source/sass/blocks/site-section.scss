@@ -1,0 +1,42 @@
+.site-section__nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.site-section__title {
+  @include default-style;
+  @include title-font;
+
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $darkblue;
+  text-align: left;
+
+  margin-bottom: 29px;
+}
+
+.site-section__list {
+  @include default-style;
+
+    text-align: left;
+    font-family: PT Mono;
+    font-size: 15px;
+    line-height: 25px;
+
+    color: $darkblue;
+    opacity: 0.5;
+}
+
+.site-section__column {
+  min-width: 243px;
+
+  margin-right: 65px;
+}
+
+.site-section__item a {
+  @include default-style;
+
+  color: $darkblue;
+}

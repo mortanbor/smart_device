@@ -37,6 +37,8 @@
 }
 
 .button--white {
+  width: 180px;
+  height: 45px;
   margin: 0;
   @include title-font;
 
@@ -60,4 +62,14 @@
   padding: 14px 19px 14px 18px;
   margin: 0;
   margin-right: 38px;
+}
+
+.button--popup {
+  align-items: center;
+  width: 412px;
+
+  margin: 0;
+  margin-bottom: 34px;
+
+  letter-spacing: 0.05em;
 }

@@ -1,0 +1,47 @@
+.site-section__nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.footer-contacts__title {
+  @include default-style;
+  @include title-font;
+
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $darkblue;
+  text-align: left;
+
+  margin-bottom: 29px;
+}
+
+.footer-contacts__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts__text {
+  @include default-style;
+
+  text-align: left;
+  font-family: PT Mono;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: $darkblue;
+  opacity: 0.5;
+}
+
+.footer-contacts__list a {
+  @include default-style;
+
+  text-align: left;
+  font-family: PT Mono;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: $darkblue;
+  opacity: 0.5;
+}

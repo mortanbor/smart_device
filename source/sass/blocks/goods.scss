@@ -9,14 +9,15 @@
   padding-right: 0;
   padding-bottom: 127px;
 
-  width: 61%;
+  width: 60%;
+  max-width: 1170px;
 }
 
 .goods__list {
   display: flex;
   flex-direction: row;
 
-  max-width: 1107px;
+  max-width: 1170px;
 
   @include default-style;
 }
@@ -38,6 +39,39 @@
   position: relative;
   width: calc(33.3% - 20px);
   margin-right: 30px;
+
+    &::after {
+      position: absolute;
+
+      content: "";
+      position: absolute;
+
+      right: 0;
+      bottom: 0;
+
+      width: 63px;
+      height: 63px;
+
+      background-color: $blue;
+  }
+
+    &::before {
+      position: absolute;
+
+      content: "";
+
+      left: 89%;
+      top: 95%;
+
+      width: 4px;
+      height: 4px;
+
+      border: solid $white;
+      border-width: 0 1px 1px 0;
+      border-bottom-right-radius: 1px;
+      transform: rotate(-45deg);
+      z-index: 2;
+  }
 }
 
 .goods__item:last-of-type {

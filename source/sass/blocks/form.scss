@@ -1,12 +1,15 @@
 .form {
+  @include default-style;
   display: flex;
   flex-direction: row;
-  @include default-style;
 
-  padding-top: 96px;
-  padding-right: 375px;
-  padding-bottom: 113px;
-  padding-left: 971px;
+  background-image:
+    url("../img/bg/bg_desktop_airplane_1x.png"),
+    url("../img/bg/bg-triangle-form@1x.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 306px),calc(50% + 125px);
+  /*background-position: 24.8% 42%, 100% 60%;*/
+  background-size: auto, auto;
 }
 
 .form__wrapper {
@@ -16,6 +19,14 @@
   align-items: flex-start;
   width: 30%;
   max-width: 570px;
+  margin: 0 auto;
+  margin-left: 50.6%;
+
+
+  padding-top: 96px;
+  padding-right: 0;
+  padding-bottom: 113px;
+  padding-left: 0;
 }
 
 .form__title {
@@ -48,6 +59,40 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.form__agreement {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    top:0;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid $white;
+  }
+}
+
+.form__agreement::before {
+  position: absolute;
+  content: "";
+
+  top: 4.5%;
+  left: 2.5%;
+
+  width: 4.5px;
+  height: 7.5px;
+
+  border: solid $white;
+  border-width: 0 1px 1px 0;
+  border-bottom-right-radius: 1px;
+  transform: rotate(45deg);
+  z-index: 2;
+  }
 
 .form__item {
   width: 47.4%;

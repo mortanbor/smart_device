@@ -1,9 +1,14 @@
+.advantages {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 .advantages__list {
+  @include default-style;
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  @include default-style;
 }
 
 .advantages__item {

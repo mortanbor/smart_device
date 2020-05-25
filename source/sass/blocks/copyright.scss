@@ -1,0 +1,58 @@
+.copyright {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+
+  width: 73.5%;
+  max-width: 1412px;
+
+  padding: 14px 255px 14px 253px;
+}
+
+.copyright p {
+  @include default-style;
+
+  text-align: left;
+  text-transform: uppercase;
+  font-family: PT Mono;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: $darkblue;
+  opacity: 0.5;
+
+  margin-bottom: 0;
+}
+
+.copyright a {
+  @include default-style;
+
+  text-align: left;
+  text-transform: uppercase;
+  font-family: PT Mono;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: $darkblue;
+  opacity: 0.5;
+}
+
+.copyright::before {
+  position: absolute;
+
+  content: "";
+
+  top:0;
+  left: 0;
+
+  width: 100%;
+
+  border: 1px solid #626962;
+  opacity: 0.2;
+}
+
+.copyright-years--top {
+  font-size: 0;
+}

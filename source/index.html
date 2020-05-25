@@ -88,10 +88,12 @@
           </ul>
         </section>
         <section class="page-main__company about-company">
-          <h2 class="about-company__title">О компании</h2>
-          <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-          <a class="about-company__button button button--white" href="#">Подробнее</a>
+          <div class="about-company__wrapper">
+            <h2 class="about-company__title">О компании</h2>
+            <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+            <a class="about-company__button button button--white" href="#">Подробнее</a>
+        </div>
         </section>
       </div>
       <section class="page-main__goods goods">
@@ -161,15 +163,24 @@
           <p class="page-footer__copyright-years page-footer__copyright-years--top">1999-2018 SD Service Devices</p>
           <ul class="page-footer__social social">
               <li class="social__item">
-                <a class="social__link" href="#" aria-label="Мы в Фейсбук">f
+                <a class="social__link" href="#" aria-label="Мы в Фейсбук">
+                  <svg width="27" height="27" viewbox="0 0 27 27">
+                  <use xlink:href="#icon-fb"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#" aria-label="Мы в Одноклассниках">o
+                <a class="social__link" href="#" aria-label="Мы в Одноклассниках">
+                  <svg width="27" height="26" viewbox="0 0 27 26">
+                  <use xlink:href="#icon-ok"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#" aria-label="Мы ВКонтакте">k
+                <a class="social__link" href="#" aria-label="Мы ВКонтакте">
+                  <svg width="27" height="26" viewbox="0 0 27 26">
+                  <use xlink:href="#icon-vk"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -218,11 +229,11 @@
           </div>
         </div>
       </div>
-      <div class="page-footer__copyright">
-        <p class="page-footer__copyright-rights">Все права защищены</p>
-        <p class="page-footer__copyright-years page-footer__copyright-years--bottom">1999-2018 SD Service Devices</p>
-        <span class="page-footer__copyright-link"><a href="#">Условия конфиденциальности</a></span>
-        <a class="page-footer__copyright-developed-by" href="#">Developed by wow studio</a>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright-rights">Все права защищены</p>
+        <p class="copyright-years copyright-years--bottom">1999-2018 SD Service Devices</p>
+        <span class="copyright-link"><a href="#">Условия конфиденциальности</a></span>
+        <a class="copyright-developed-by" href="#">Developed by wow studio</a>
       </div>
     </footer>
   </div>
@@ -247,7 +258,7 @@
             <textarea class="popup__textarea" id="message-popup" name="message" placeholder="Ваш вопрос" required></textarea>
           </li>
         </ul>
-        <button class="popup__button button" type="submit">Отправить</button>
+        <button class="popup__button button button--popup" type="submit">Отправить</button>
         <div class="popup__agreement">
           <input class="visually-hidden popup__input popup__input--check" type="checkbox" id="popupagreement" name="agreement" checked required>
           <label class="popup__label" for="popupagreement">Я согласен на обработку персональных данных</label>

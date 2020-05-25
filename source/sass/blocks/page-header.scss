@@ -1,21 +1,37 @@
 .page-header {
+  position: relative;
   background-image:
     url("../img/bg/bg_circuit_desktop@1x.png"),
     url("../img/bg/bg-triangle-header@1x.png"),
     url("../img/bg/bg-header-desktop@1x.png");
   background-color: $darkblue;
   background-repeat: no-repeat;
-  background-position: calc(54.2% + 379px) 258px, 54% 13.4%, 0 0;
+  background-position: calc(54.2% + 379px) 258px, 54% 130%, 0 0;
   background-size: auto, auto, cover;
 }
 
 .page-header__nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1410px;
   margin: 0 auto;
   padding: 33px;
+}
+
+.page-header__nav::before {
+  content: "";
+
+  position: absolute;
+  top: 53px;
+  left: 360px;
+
+  width: 37px;
+  height: 1px;
+
+  background-color: #ffffff;
+  box-shadow: 0 11px 0 0 #ffffff;
 }
 
 .page-header__nav__wrapper {

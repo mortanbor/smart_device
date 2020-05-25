@@ -31,14 +31,14 @@
 }
 
 .about__text::before {
+  position: absolute;
+  content: "";
   top: 17px;
   left: 0;
 
   background-color: $white;
   width: 66px;
   height: 2px;
-  position: absolute;
-  content: "";
 }
 
 .about__scroll {
@@ -60,18 +60,3 @@
     display: none;
   }
 }
-
-  /*.about__title {
-    width: 57%;
-    margin-bottom: 40px;
-
-    @include title-font;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 94px;
-    text-transform: uppercase;
-    text-align: left;
-    letter-spacing: 0.07em;
-    color: $white;
-  }
-}*/
